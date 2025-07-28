@@ -45,11 +45,9 @@ const forgotPassword = async (req, res) => {
     }
   });
 
-  res
-    .status(200)
-    .json({
-      message: "A link to reset your password have been sent to your email.",
-    });
+  res.status(200).json({
+    message: "A link to reset your password have been sent to your email.",
+  });
 };
 
 //  Route to handle password reset request
